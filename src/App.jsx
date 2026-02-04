@@ -1,9 +1,12 @@
-import ColumnContainer from './containers/columns/ColumnContainer';
+import ColumnContainer from './containers/columns/ColumnsContainer';
+import { ColumnsProvider } from './containers/columns/ColumnsContext';
 
 function App() {
   return (
     <>
-      <ColumnContainer />
+      <ColumnsProvider>
+        <ColumnContainer />
+      </ColumnsProvider>
     </>
   );
 }
